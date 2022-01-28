@@ -1,0 +1,6 @@
+﻿  main.cpp
+  quene.cpp
+  stack.cpp
+  Generating Code...
+C:\Users\YC\Downloads\Code\My408issues\C\MiddleStage\mid_day6\quene.cpp(20): warning C4715: 'DQuene': not all control paths return a value
+  mid_day6.vcxproj -> C:\Users\YC\Downloads\Code\My408issues\C\MiddleStage\Debug\mid_day6.exe
