@@ -141,6 +141,8 @@
   <ItemGroup>
     <ClCompile Include="dah.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="quene-LinkList.cpp" />
+    <ClCompile Include="stack.cpp" />
     <ClCompile Include="wand.cpp" />
   </ItemGroup>
   <ItemGroup>

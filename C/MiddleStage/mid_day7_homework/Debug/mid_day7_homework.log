@@ -1,0 +1,5 @@
+﻿  main.c
+C:\Users\YC\Downloads\Code\My408issues\C\MiddleStage\mid_day7_homework\main.c(23,12): warning C4101: 'pos': unreferenced local variable
+C:\Users\YC\Downloads\Code\My408issues\C\MiddleStage\mid_day7_homework\main.c(23,9): warning C4101: 'j': unreferenced local variable
+C:\Users\YC\Downloads\Code\My408issues\C\MiddleStage\mid_day7_homework\main.c(23,6): warning C4101: 'i': unreferenced local variable
+  mid_day7_homework.vcxproj -> C:\Users\YC\Downloads\Code\My408issues\C\MiddleStage\Debug\mid_day7_homework.exe

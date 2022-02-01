@@ -5,7 +5,7 @@ void PreOrderTraverse(BiTree T)
 {
 	if (T == NULL)
 		return;
-	putchar(T->data);
+	putchar(T->c);
 	PreOrderTraverse(T->lchild);
 	PreOrderTraverse(T->rchild);
 }
@@ -19,7 +19,7 @@ void CreateBiTree(BiTree* T) {
 		*T = (BiTree)calloc(1, sizeof(BiTNode));
 		if (!(*T))
 			exit(0);
-		(*T)->data = ch;
+		(*T)->c = ch;
 		CreateBiTree(&(*T)->lchild);
 		CreateBiTree(&(*T)->rchild);
 	}

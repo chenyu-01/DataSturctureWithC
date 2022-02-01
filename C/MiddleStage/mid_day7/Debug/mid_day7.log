@@ -1,9 +1,2 @@
-﻿  dah.cpp
-  main.cpp
-  wand.cpp
-C:\Users\YC\Downloads\Code\My408issues\C\MiddleStage\mid_day7\wand.cpp(4,12): warning C4101: 'pos': unreferenced local variable
-C:\Users\YC\Downloads\Code\My408issues\C\MiddleStage\mid_day7\wand.cpp(5,7): warning C4101: 'c': unreferenced local variable
-C:\Users\YC\Downloads\Code\My408issues\C\MiddleStage\mid_day7\wand.cpp(4,9): warning C4101: 'j': unreferenced local variable
-C:\Users\YC\Downloads\Code\My408issues\C\MiddleStage\mid_day7\wand.cpp(4,6): warning C4101: 'i': unreferenced local variable
-  Generating Code...
+﻿  wand.cpp
   mid_day7.vcxproj -> C:\Users\YC\Downloads\Code\My408issues\C\MiddleStage\Debug\mid_day7.exe
