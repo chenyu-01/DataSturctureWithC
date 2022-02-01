@@ -1,1 +1,9 @@
-﻿  4.3.1 二叉树的遍历.vcxproj -> C:\Users\YC\Downloads\Code\初级-中级-高级-文件夹打包\中级阶段-day7 代码及笔记\第五章 二叉树\Debug\4.3.1 二叉树的遍历.exe
+﻿  main.cpp
+C:\Users\YC\Downloads\Code\My408issues\source code in class\第五章 二叉树\4.3.1 二叉树的遍历\main.cpp(78,8): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\YC\Downloads\Code\My408issues\source code in class\第五章 二叉树\4.3.1 二叉树的遍历\main.cpp(73,10): warning C4101: 'pos': unreferenced local variable
+C:\Users\YC\Downloads\Code\My408issues\source code in class\第五章 二叉树\4.3.1 二叉树的遍历\main.cpp(73,8): warning C4101: 'j': unreferenced local variable
+C:\Users\YC\Downloads\Code\My408issues\source code in class\第五章 二叉树\4.3.1 二叉树的遍历\main.cpp(73,6): warning C4101: 'i': unreferenced local variable
+  queue.cpp
+  stack.cpp
+  Generating Code...
+  4.3.1 二叉树的遍历.vcxproj -> C:\Users\YC\Downloads\Code\My408issues\source code in class\第五章 二叉树\Debug\4.3.1 二叉树的遍历.exe
