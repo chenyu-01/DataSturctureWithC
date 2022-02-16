@@ -93,8 +93,8 @@ int main()
 	BiTree T;
 	BiTree parent;//存储父亲结点的地址值
 	BiTree search;
-	KeyType str[]={54,20,66,40,28,79,58};//将要进入二叉排序树的元素值
-	Creat_BST(T,str,7);
+	KeyType str[]={54,20,66,40,28,79,58,45};//将要进入二叉排序树的元素值
+	Creat_BST(T,str,8);
 	InOrder(T);
 	printf("\n");
 	search=BST_Search(T,40,parent);
@@ -104,7 +104,7 @@ int main()
 	}else{
 		printf("未找到对应结点\n");
 	}
-	DeleteNode(T,66);
+	DeleteNode(T,54);
 	InOrder(T);
 	printf("\n");
 	system("pause");

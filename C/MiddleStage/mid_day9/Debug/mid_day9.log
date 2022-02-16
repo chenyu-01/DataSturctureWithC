@@ -1,2 +1,4 @@
-﻿  main.cpp
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (mid_day9_BinarySearchTree.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+C:\Users\YC\Downloads\Code\My408issues\C\MiddleStage\mid_day9\main.cpp(105): warning C4715: 'BST_Search2': not all control paths return a value
   mid_day9.vcxproj -> C:\Users\YC\Downloads\Code\My408issues\C\MiddleStage\Debug\mid_day9.exe

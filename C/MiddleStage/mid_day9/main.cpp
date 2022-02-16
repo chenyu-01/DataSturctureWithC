@@ -29,6 +29,7 @@ void BST_Insert(BiTree& T, KeyType data) {
 	newnode->rchild = NULL;
 	if (T == NULL) {
 		T = newnode;
+		return;
 	}
 	if (data > T->key)
 	{
@@ -48,13 +49,13 @@ void BST_Insert_NoRecursion(BiTree& T, KeyType data) {
 		T = newnode;
 		return;
 	}
-	BiTree temp = T;
+	BiTree temp = T;// use temp node to loop through end
 	while (temp) {
 		if (data > temp->key)
 		{
-			if (temp->rchild)
+			if (NULL != temp->rchild)
 				temp = temp->rchild;
-			else {
+			else {// rchild not exist
 				temp->rchild = newnode;
 				return;
 			}
@@ -69,21 +70,80 @@ void BST_Insert_NoRecursion(BiTree& T, KeyType data) {
 		}
 	}
 }
-void Create_BST(BiTree& T, KeyType str[], int n) {
+void Create_BST(BiTree& T, KeyType str[], int n) 
+{
 	T = NULL;
 	int i = 0;
 	while (i<n)
 	{
-		BST_Insert_NoRecursion(T, str[i]);
+		BST_Insert(T, str[i]);
 		i++;
 	}
 }
-BSTNode* BST_Search;
-int main() {
-	BSTNode* tree ;
-	KeyType arr[9] = { 2,7,4,3,9,5,6,1,8 };//Binary Search Tree Data
-	Create_BST(tree, arr, 9);
-	BST_InOrder(tree);
-	return 0;
+BSTNode* BST_Search(BiTree T, KeyType key, BiTree& parent) 
+{
+	parent = NULL;
+	while (T != NULL && key != T->key) {
+		parent = T;
+		if (key < T->key) T = T->lchild;
+		else T = T->rchild;
+	}
+	return T;
+}
+BSTNode* BST_Search2(BiTree T, KeyType key, BiTree& parent)
+{
+	if (T == NULL || T->key == key)
+	{
+		return T;
+	}
+	parent = T;// parent is the T's parent
+	if (key > T->key) {
+		return BST_Search2(T->rchild, key, parent);
+	}
+	else if (key < T->key)
+		return BST_Search2(T->lchild, key, parent);
+}
 
+void DeleteNode(BiTree& T, KeyType key)
+{
+	BiTree search_node, parent_node;
+	search_node = BST_Search(T, key, parent_node);
+	if (NULL == search_node) {
+		printf("not find!\n");
+		return;
+	}
+	//specific situation
+	if (search_node->lchild && search_node->rchild)
+	{
+		//find the largest node in left sub tree
+		BiTree temp = search_node->lchild;
+		while (temp->rchild)
+		{
+			temp = temp->rchild;
+		}
+		search_node = temp;
+	}
+	else if (search_node->lchild) {
+		search_node = search_node->lchild;
+	}
+	else if (search_node->rchild) {
+		search_node = search_node->rchild;
+	}
+	else if (parent_node->lchild == search_node)
+		parent_node->lchild = NULL;
+	else
+		parent_node->rchild = NULL;
+	free(search_node);
+	search_node = NULL;
+}
+int main() {
+	BSTNode* tree, *node,*parent;
+	KeyType arr[9] = { 6,1,8,2,7,4,3,9,5 };//Binary Search Tree Data
+	Create_BST(tree, arr, 9);
+	node = BST_Search2(tree, 4, parent);
+	printf("%d\t%d\n", node->key, parent->key);
+	DeleteNode(tree, 3);//É¾³ýÄ³¸ö½áµã
+	BST_InOrder(tree);
+	printf("\n");
+	return 0;
 }
