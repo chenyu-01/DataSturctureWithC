@@ -19,7 +19,7 @@ void PreOrderTraverse(BiTree T);
 void CreateBiTree(BiTree* T);
 //Wandao
 void HirachicalBuild(BiTNode** tree);
-void PreOrder(BiTree T);
+void PostOrder(BiTree T);
 void InOrder(BiTree T);
 void InOrder2(BiTree T);
 void PostOrder(BiTree T);
